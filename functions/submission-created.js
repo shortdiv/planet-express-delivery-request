@@ -6,11 +6,26 @@ const client = new faunadb.Client({ secret: process.env.VUE_APP_FAUNA_SECRET });
 
 exports.handler = (event, context, callback) => {
   const body = JSON.parse(event.body).payload;
-
+  const {
+    contents,
+    chosenCrew,
+    recipient,
+    destination,
+    notes,
+    appearances
+  } = body;
   client
     .query(
       q.Create(q.Class("deliveries"), {
-        data: body
+        data: {
+          Contents: contents,
+          Crew: chosenCrew.split(","),
+          Recipient: recipient,
+          Destination: destination,
+          Notes: notes,
+          Appearance: appearances,
+          status: "pending"
+        }
       })
     )
     .then(ret => {
