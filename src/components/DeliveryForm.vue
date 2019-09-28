@@ -5,6 +5,7 @@
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      autocomplete="off"
       @submit.prevent="handleSubmit"
     >
       <header>
@@ -162,6 +163,7 @@ legend {
   margin: 0 0 5px 0;
   text-align: left;
   display: block;
+  font-size: 1.3em;
 }
 
 label {
@@ -189,6 +191,7 @@ fieldset > li {
   display: block;
   width: 100%;
   text-align: left;
+  padding: 0.5em;
 }
 
 @media (min-width: 1200px) {
@@ -216,6 +219,7 @@ fieldset > li {
     position: relative;
     cursor: pointer;
     padding: 0;
+    font-size: 1.15em;
   }
   & + span:before {
     content: "";
