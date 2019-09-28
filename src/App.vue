@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
     <DeliveryForm />
   </div>
 </template>
@@ -22,7 +21,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+  padding: 20px 15%;
+}
+
+body {
+  background-color: #3f4041ff;
 }
 </style>
