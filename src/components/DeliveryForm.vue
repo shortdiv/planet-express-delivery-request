@@ -49,12 +49,12 @@
             id="destination"
             name="destination"
             type="text"
-            :value="form.destination"
+            v-model="form.destination"
           />
         </label>
         <label>
           Notes
-          <input id="notes" name="notes" type="text" :value="form.notes" />
+          <input id="notes" name="notes" type="text" v-model="form.notes" />
         </label>
         <label>
           Appearances
@@ -62,7 +62,7 @@
             id="appearances"
             name="appearances"
             type="text"
-            :value="form.appearances"
+            v-model="form.appearances"
           />
         </label>
       </div>
@@ -112,6 +112,7 @@ export default {
       const axiosConfig = {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
+      debugger;
       axios.post(
         "/",
         this.encode({
