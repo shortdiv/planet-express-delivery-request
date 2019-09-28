@@ -23,4 +23,16 @@ export default {
 body {
   background-color: #3f4041ff;
 }
+button {
+  width: 100%;
+  padding: 20px 60px;
+  outline: none;
+  background-color: #282c34;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 9px #95a5a6;
+  box-shadow: 0 9px #95a5a6;
+  font-size: 1.2em;
+  color: #fff;
+}
 </style>
