@@ -119,7 +119,14 @@ export default {
         "form-name": "delivery-request",
         ...this.form
       };
-      axios.post("/", this.encode(payload), axiosConfig);
+      axios
+        .post("/", this.encode(payload), axiosConfig)
+        .then(() => {
+          this.$router.push("thanks");
+        })
+        .catch(() => {
+          this.$router.push("404");
+        });
     }
   }
 };

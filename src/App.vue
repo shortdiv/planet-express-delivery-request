@@ -1,17 +1,12 @@
 <template>
   <div id="app">
-    <DeliveryForm />
+    <router-view />
   </div>
 </template>
 
 <script>
-import DeliveryForm from "./components/DeliveryForm.vue";
-
 export default {
-  name: "app",
-  components: {
-    DeliveryForm
-  }
+  name: "app"
 };
 </script>
 
