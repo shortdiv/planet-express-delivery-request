@@ -13,7 +13,7 @@ exports.handler = (event, context, callback) => {
     destination,
     notes,
     appearances
-  } = body;
+  } = body.data;
   client
     .query(
       q.Create(q.Class("deliveries"), {
