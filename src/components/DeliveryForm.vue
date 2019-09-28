@@ -66,6 +66,7 @@
           />
         </label>
       </div>
+      <button type="submit" class="submit-button">Request Job</button>
     </form>
   </div>
 </template>
