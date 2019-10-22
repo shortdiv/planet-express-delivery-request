@@ -1,0 +1,5 @@
+# If visitor has 'nf_jwt' with specific roles set, let them in.
+/* /:splat 200! Role=admin,editor
+
+# Else, redirect them to login portal site.
+/* https://planet-express-deliveries.netlify.com/?site=https://delivery-request.netlify.com/:splat 302!
